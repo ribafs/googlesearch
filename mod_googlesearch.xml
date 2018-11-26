@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Google Search</name>
+	<author>Ribamar FS</author>
+	<creationDate>Novembro de 2018</creationDate>
+	<copyright>(C) 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>ribafs@gmail.com</authorEmail>
+	<authorUrl>http://ribafs.org</authorUrl>
+	<version>1.0</version>
+	<description>Este módulo efetua uma busca via Google neste site.</description>
+	<files>
+		<filename module="mod_googlesearch">mod_googlesearch.php</filename>
+		<filename>index.html</filename>
+	</files>
+    <config>
+     <fields name="params">
+      <fieldset name="basic">
+       <field
+         name="domain"
+         type="text"
+         published=""
+         label="Domain"
+         default="ribafs.github.io"
+         description="Entre acima com o domínio"/>
+       </fieldset>
+      </fields>
+    </config>
+</extension>
